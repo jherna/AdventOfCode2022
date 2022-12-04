@@ -3,7 +3,6 @@ package day3;
 import java.io.File;
 import java.io.FileNotFoundException;
 import java.net.URL;
-import java.util.Optional;
 import java.util.Scanner;
 import java.util.stream.Stream;
 
