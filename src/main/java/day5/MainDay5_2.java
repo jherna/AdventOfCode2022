@@ -60,9 +60,7 @@ public class MainDay5_2 {
         for (int i = 0; i < 10; i++) {
             sc.nextLine();
         }
-        String line;
-        //move 3 from 1 to 2
-        int q,s,d;
+        int q,s,d; //move 3 from 1 to 2 : quantity, source, destiny
         while(sc.hasNext()) {
             q = sc.nextInt();
             s = sc.nextInt();
