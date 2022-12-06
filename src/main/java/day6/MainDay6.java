@@ -29,7 +29,7 @@ public class MainDay6 {
             letters.add(line.charAt(i+1));
             letters.add(line.charAt(i+2));
             letters.add(line.charAt(i+3));
-            if(letters.stream().distinct().collect(Collectors.toList()).size() == 4) {
+            if(letters.stream().distinct().toList().size() == 4) {
                 System.out.println(i+4);
                 break;
             } else letters.clear();

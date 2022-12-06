@@ -25,7 +25,7 @@ public class MainDay6_2 {
         if(sc.hasNext()) line = sc.nextLine();
         for (int i = 0; i < line.length()-14; i++) {
             for (int j = 0; j < 14; j++) letters.add(line.charAt(i+j));
-            if(letters.stream().distinct().collect(Collectors.toList()).size() == 14) {
+            if(letters.stream().distinct().toList().size() == 14) {
                 System.out.println(i+14);
                 break;
             } else letters.clear();
