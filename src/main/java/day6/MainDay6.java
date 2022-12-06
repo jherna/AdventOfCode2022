@@ -6,7 +6,6 @@ import java.net.URL;
 import java.util.ArrayList;
 import java.util.List;
 import java.util.Scanner;
-import java.util.stream.Collectors;
 
 public class MainDay6 {
 
@@ -22,7 +21,6 @@ public class MainDay6 {
         }
         String line = "";
         List<Character> letters = new ArrayList<>();
-        boolean trobat = false;
         if(sc.hasNext()) line = sc.nextLine();
         for (int i = 0; i < line.length()-4; i++) {
             letters.add(line.charAt(i));
