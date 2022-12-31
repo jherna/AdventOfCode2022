@@ -50,11 +50,43 @@ public class MainDay2 {
         }
         return 0;
     }
-    //part 2: I don't understand the problem
+    //part 2:
+
+    /**
+     *  X needs to loose
+     *  Y needs to draw
+     *  Z needs to win
+     **/
     private static int rps2(String oponent, String you) {
-        if (you.equals("A") ) return 4;
-        if (you.equals("B") ) return 1;
-        if (you.equals("C") ) return 7;
-        return 0;
+        int sum = 0;
+        switch (you) {
+            case "B": // es necessita empatar
+                sum = valor(oponent) + 3;
+                break;
+            case "C": // guanyar
+                if(oponent.equals("A")) sum = valor("B");
+                if(oponent.equals("B")) sum = valor("C");
+                if(oponent.equals("C")) sum = valor("A");
+                sum += 6;
+                break;
+
+            case "A": // perdre
+                if(oponent.equals("A")) sum = valor("C");
+                if(oponent.equals("B")) sum = valor("A");
+                if(oponent.equals("C")) sum = valor("B");
+                sum += 0;
+
+
+        }
+
+        return sum;
+    }
+
+    public static int valor(String p) {
+        int v = 0;
+        if(p.equals("A")) v = 1;
+        if(p.equals("B")) v =  2;
+        if(p.equals("C")) v = 3;
+        return v;
     }
 }
