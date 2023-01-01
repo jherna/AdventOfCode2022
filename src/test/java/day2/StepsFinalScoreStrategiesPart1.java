@@ -9,8 +9,6 @@ import org.junit.jupiter.api.Assertions;
 
 public class StepsFinalScoreStrategiesPart1 {
     Game game;
-    Hand o ;
-    Hand e ;
     int punts;
     @Before
     public void before() {
