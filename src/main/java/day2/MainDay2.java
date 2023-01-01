@@ -9,6 +9,7 @@ import java.util.Scanner;
 public class MainDay2 {
 
     public static void main(String[] args) {
+
         URL input = MainDay2.class.getResource("input.txt");
         System.out.println(input);
         File file = new File(input.getFile());
