@@ -26,7 +26,7 @@ public class MainDay2 {
             round = sc.nextLine();
             oponent = String.valueOf(round.charAt(0));
             you = String.valueOf(((char) (round.charAt(2) - 23)));
-            sum += rps2(oponent, you);
+            sum += rps(oponent, you);
             System.out.printf("%s%s ", oponent, you);
         }
         System.out.printf("%n");

@@ -14,10 +14,6 @@ public enum Hand {
         this.code2 = code2;
     }
 
-    Hand(String c) {
-        this.code = c;
-    }
-
     public String getCode() {
         return code;
     }
